@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footballers</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header id="header" > 
+        <div>
+            <span><img src="./imagenes/logo.png" alt="logo fifa" class="logo"> </span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><input type="text" placeholder="Search player..."></li>
+                <li><a href="./home.html">Home</a> </li>
+                <li><a href="./players.html">Players</a></li>
+                <li><a href="./contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenido">
+        <div id="titulo">
+            <h1>Contact</h1>
+        </div>
+        <div id="formulario">
+            <form>
+                <fieldset>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name">
+                </fieldset>
+
+                <fieldset>
+                    <label for="lastname">Lastname: </label>
+                    <input type="text" id="lastname">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email">
+                </fieldset>
+
+                <fieldset>
+                    <label for="paises"> Paises</label>
+                    <select name="" id="paises">
+                        <option selected disabled value="default">Seleccione pais</option>
+                        <option value="arg">Argentina</option>
+                        <option value="chi">Chile</option>
+                        <option value="bra">Brasil</option>
+                    </select>
+                </fieldset>
+                
+
+                <fieldset>
+                    <textarea name="" id="consulta" cols="30" rows="10" placeholder="Write here your question"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" value="Enviar consulta" class="botonPrimario">
+                    <input type="reset" value="Borrar Campos" class="botonSecundario">
+                </fieldset>
+
+            </form>
+        </div>
+    </section>
+    <footer> 
+        © 2014-2023 Copyright Footballers All FIFA assets are property of EA Sports. 18+ Bet Responsibly
+    </footer>
+</body>
+</html>
