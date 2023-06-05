@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +8,6 @@
     <title>Footballers</title>
 </head>
 <body>
-   <!--  <header id="header" > 
-        <div>
-            <span><img src="./imagenes/logo.png" alt="logo fifa" class="logo"> </span>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><input type="text" placeholder="Search player..."></li>
-                <li><a href="./index.html">Home</a> </li>
-                <li><a href="./views/players/players.html">Players</a></li>
-              <li><a href="./views/contact/contact.html">Contact</a> </li>
-            </ul>
-        </nav>
-    </header> -->
-
     <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="#">
@@ -41,52 +26,62 @@
                         </form>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Players</a>
+                        <a class="nav-link text-light" href="./views/players/players.html">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Squads</a>
+                        <a class="nav-link text-light" href="./views/squads/squads.html">Squads</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">SBC</a>
+                        <a class="nav-link text-light" href="./views/sbc/sbc.html">SBC</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light">Contact</a>
+                        <a class="nav-link text-light" href="./views/contact/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="contenido">
-        <div id="titulo">
-            <h1>Latest Popular Players</h1>
-        </div>
-        <div class="contenedor">
-            <table>
-                <tr>
-                    <td> <img src="./imagenes/alexis.png" alt="Alexis Sanchez TOTS"></td> 
-                    <td> <img src="./imagenes/mbappe.png" alt="Killian Mbappe TOTS"></td>
-                    <td><img src="./imagenes/payet.jpg" alt="Dimitri Payet TOTS"></td>
-                    <td><img src="./imagenes/thuram.png" alt="Jeffren thuram TOTS" ></td>
-                </tr> 
-                <tr>
-                    <td><img src="./imagenes/delpiero.png" alt="Alessandro Del Piero TT"></td>
-                    <td><img src="./imagenes/lucio.png" alt="Lucio TT"></td>
-                    <td><img src="./imagenes/yaya.png" alt="Yaya Touré TT"></td>
-                    <td><img src="./imagenes/ronaldo.png" alt="Ronaldo O fenómeno TT"></td>
-                        
-                </tr>
 
-            </table>
-        </div>
-    </section>
-    
-    
-    <footer >
-        © 2014-2023 Copyright Footballers All FIFA assets are property of EA Sports. 18+ Bet Responsibly
-    </footer>
+    <div class="container-fluid bg-success text-dark bg-opacity-10">
+        <p class="h1 text-center text-info">All Popular Players</p>
+        <div class="container-fluid p bg-dark">
+            <div class="row">
+                <div class="col p-2">
+                    <img src="./imagenes/alexis.png" alt="Alexis Sanchez TOTS" class="img-fluid">
+                </div>
+                <div class="col p-2">
+                    <img src="./imagenes/mbappe.png" alt="Killian Mbappe TOTS" class="img-fluid">
+                </div>
+                <div class="col p-2">
+                    <img src="./imagenes/payet.jpg" alt="Dimitri Payet TOTS" class="img-fluid">
+                </div>
+                <div class="col p-2">
+                    <img src="./imagenes/thuram.png" alt="Jeffren thuram TOTS" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <img src="./imagenes/delpiero.png" alt="Alessandro Del Piero TT" class="img-fluid">
+                </div>
+                <div class="col p-2">
+                    <img src="./imagenes/lucio.png" alt="Lucio TT" class="img-fluid">
+                </div>
+                <div class="col p-2">
+                    <img src="./imagenes/ronaldo.png" alt="Ronaldo O fenómeno TT" class="img-fluid">
+                </div>
+                <div class="col p-2">
+                    <img src="./imagenes/yaya.png" alt="Yaya Touré TT" class="img-fluid">
+                </div>
+            </div>
+          </div>
+        
+    </div>
+    <div class="container-fluid bg-info p-10">
+        <footer class="text-white text-center p-110">© 2014-2023 Copyright Footballers All FIFA assets are property of EA Sports. 18+ Bet Responsibly</footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
