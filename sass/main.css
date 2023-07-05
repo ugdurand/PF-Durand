@@ -12051,6 +12051,9 @@ body {
   .header {
     height: 6vh;
   }
+  .table-text {
+    font-size: 0.75em;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container-footer {
@@ -12065,6 +12068,9 @@ body {
   .header {
     height: 6vh;
   }
+  .table-text {
+    font-size: 0.9em;
+  }
 }
 @media screen and (min-width: 1025px) {
   .container-footer {
@@ -12078,6 +12084,9 @@ body {
   }
   .header {
     height: 5vh;
+  }
+  .table-text {
+    font-size: 1em;
   }
 }
 footer {
