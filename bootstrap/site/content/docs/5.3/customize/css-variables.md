@@ -39,6 +39,7 @@ These CSS variables are available everywhere, regardless of color mode.
 These variables are scoped to our built-in dark mode.
 
 ```css
+{% raw %}
 {{< root.inline >}}
 {{- $css := readFile "dist/css/bootstrap.css" -}}
 {{- $match := findRE `\[data-bs-theme=dark\] {([^}]*)}` $css 1 -}}
@@ -47,6 +48,7 @@ These variables are scoped to our built-in dark mode.
 {{- end -}}
 {{- index $match 0 -}}
 {{< /root.inline >}}
+{% endraw %}
 ```
 
 ## Component variables
