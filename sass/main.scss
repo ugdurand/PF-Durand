@@ -1,22 +1,18 @@
-$primary: #ff0000; // Cambia el color primario a rojo
-$secondary: #00ff00; // Cambia el color secundario a verde
+$primary: #20c997; // Cambia el color primario a rojo
+$secondary: #404040; // Cambia el color secundario a verde
 
 // Importa el archivo principal de Bootstrap después de definir tus variables
-//@import 'bootstrap';
-
-
+@import '../bootstrap/scss/bootstrap.scss';
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    font-weight: bolder;
     letter-spacing: 0.5px;
 }
 
 $mobile: 768px;
 $tablet: 1024px;
 $desktop: 1025px;
-$primaryColor: red;
-$secondaryColor: white;
 
 // Media queries para ajustar las variables según el dispositivo
 @media screen and (max-width: 768px) {
@@ -78,9 +74,23 @@ footer {
 }
 
 #squadName::placeholder {
-  color: $primaryColor; 
+  color: $primary; 
 }
 
 #searchPlayer::placeholder {
-  color: $secondaryColor; 
+  color: $light; 
+}
+
+.btn-placeholder::placeholder {
+  color: $secondary;
+  font-weight: bold;
+}
+
+.btn-bold{
+  font-weight: bold;
+}
+
+.select-custom, option {
+  font-weight: bolder;
+
 }

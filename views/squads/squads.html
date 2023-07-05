@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
                     <img src="../../imagenes/logo.png" alt="Bootstrap" width="30" height="24" class="d-inline-block align-text-top">
                     FIFA23
                 </a>            
-                <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,7 +26,7 @@
                         <li>
                             <form class="d-flex mx-4" role="search">
                                 <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search player" aria-label="Search">
-                                <button class="btn btn-info text-dark fw-bold" type="submit">Search</button>
+                                <button class="btn btn-primary text-dark fw-bold" type="submit">Search</button>
                             </form>
                         </li>
                         <li class="nav-item">
@@ -52,7 +51,7 @@
     </header>
     <section class="bg-main">
         <div class="container-fluid py-5">
-            <p class="h1 text-center text-info">Squad Builder</p>
+            <p class="h1 text-center text-primary">Squad Builder</p>
         </div>
         <div class="container">
             <div class="row">
@@ -60,13 +59,13 @@
                     <div class="row">
                         <div class="col mb-4">
                             <label for="squadName" class="text-white">Squad Name</label>
-                            <input type="text" name="squadName" id="squadName" class="form-control bg-dark text-info" placeholder="Enter your squad name.">  
+                            <input type="text" name="squadName" id="squadName" class="form-control bg-dark text-primary" placeholder="Enter your squad name.">  
                         </div>
                     </div>
                     <div class="row">
                         <div class="col mb-4">
                             <label for="formation" class="text-white">Formation</label>
-                            <select name="formation" id="formation" class="form-control bg-dark text-info">
+                            <select name="formation" id="formation" class="form-control bg-dark text-primary">
                                 <option selected disabled value="default">Select formation</option>
                                 <option value="433">4-3-3</option>
                                 <option value="442">4-4-2</option>
@@ -77,13 +76,13 @@
                     <div class="row">
                         <div class="col mb-4">
                             <label class="text-white">Rating</label>
-                            <div class="text-info">
+                            <div class="text-primary">
                                 <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-9">
+                <div class="col-12 col-sm-12 col-md-9 text-center">
                     <img src="../../imagenes/grass_night.png" alt="stadium" class="img-fluid ml-4">
                 </div>
             </div>
@@ -93,7 +92,7 @@
     <div class="container-fluid bg-black container-footer">
         <footer class="text-white text-center">© 2014-2023 Copyright Footballers All FIFA assets are property of EA Sports. 18+ Bet Responsibly</footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../../bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/caae7da372.js" crossorigin="anonymous"></script>
 </body>
 </html>
