@@ -1,3 +1,67 @@
-head {
-  background-color: aqua;
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-footer {
+    min-height: 3vh;
+    font-size: 0.6em;
+    padding-top: 5px;
+  }
+  .bg-main {
+    background-image: url(../imagenes/dark-fifa-bg-3.png);
+    min-height: 91vh;
+  }
+  .header {
+    height: 6vh;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container-footer {
+    min-height: 3vh;
+    font-size: 0.75em;
+    padding-top: 5px;
+  }
+  .bg-main {
+    background-image: url(../imagenes/dark-fifa-bg-3.png);
+    min-height: 91vh;
+  }
+  .header {
+    height: 6vh;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .container-footer {
+    min-height: 5vh;
+    font-size: 1em;
+    padding-top: 15px;
+  }
+  .bg-main {
+    background-image: url(../imagenes/dark-fifa-bg-3.png);
+    min-height: 90vh;
+  }
+  .header {
+    height: 5vh;
+  }
+}
+footer {
+  height: 100%;
+}
+
+#squadName::-moz-placeholder {
+  color: red;
+}
+
+#squadName::placeholder {
+  color: red;
+}
+
+#searchPlayer::-moz-placeholder {
+  color: white;
+}
+
+#searchPlayer::placeholder {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

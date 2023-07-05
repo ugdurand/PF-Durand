@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../sass/main.css">
     <title>Footballers</title>
 </head>
-<body>
-    <header>
+<body class="min-vh100 vh-100">
+    <header class="header">
         <nav class="navbar navbar-expand-lg bg-black">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="../../index.html">
@@ -47,26 +50,50 @@
             </div>
         </nav>
     </header>
-    <section class="w-100  bg-main">
+    <section class="bg-main">
         <div class="container-fluid py-5">
             <p class="h1 text-center text-info">Squad Builder</p>
         </div>
-        <div class="container text-center py-3">
-            <label for="formation" class="text-white">Formation</label>
-            <select name="formation" id="formation" class="form-control bg-dark text-white">
-                <option selected disabled value="default">Select formation</option>
-                <option value="433">4-3-3</option>
-                <option value="442">4-4-2</option>
-                <option value="541">5-4-1</option>
-            </select>
-        </div>
-        <div class="container-fluid text-center">
-            <img src="../../imagenes/grass_night.png" alt="stadium">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3">
+                    <div class="row">
+                        <div class="col mb-4">
+                            <label for="squadName" class="text-white">Squad Name</label>
+                            <input type="text" name="squadName" id="squadName" class="form-control bg-dark text-info" placeholder="Enter your squad name.">  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-4">
+                            <label for="formation" class="text-white">Formation</label>
+                            <select name="formation" id="formation" class="form-control bg-dark text-info">
+                                <option selected disabled value="default">Select formation</option>
+                                <option value="433">4-3-3</option>
+                                <option value="442">4-4-2</option>
+                                <option value="541">5-4-1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-4">
+                            <label class="text-white">Rating</label>
+                            <div class="text-info">
+                                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9">
+                    <img src="../../imagenes/grass_night.png" alt="stadium" class="img-fluid ml-4">
+                </div>
+            </div>
+            
         </div>
     </section>
-    <div class="container-fluid containerFooter">
+    <div class="container-fluid bg-black container-footer">
         <footer class="text-white text-center">© 2014-2023 Copyright Footballers All FIFA assets are property of EA Sports. 18+ Bet Responsibly</footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/caae7da372.js" crossorigin="anonymous"></script>
 </body>
 </html>
