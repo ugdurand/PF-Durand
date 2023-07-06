@@ -1,0 +1,5 @@
+$primary: #20c997; // Cambia el color primario a rojo
+$secondary: #404040; // Cambia el color secundario a verde
+
+// Importa el archivo principal de Bootstrap después de definir tus variables
+@import '../bootstrap/scss/bootstrap.scss';

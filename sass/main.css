@@ -12038,6 +12038,49 @@ body {
   letter-spacing: 0.5px;
 }
 
+footer {
+  height: 100%;
+}
+
+#squadName::-moz-placeholder {
+  color: #20c997;
+}
+
+#squadName::placeholder {
+  color: #20c997;
+}
+
+#searchPlayer::-moz-placeholder {
+  color: #f8f9fa;
+}
+
+#searchPlayer::placeholder {
+  color: #f8f9fa;
+}
+
+.btn-placeholder::-moz-placeholder {
+  color: #404040;
+  font-weight: bold;
+}
+
+.btn-placeholder::placeholder {
+  color: #404040;
+  font-weight: bold;
+}
+
+.btn-bold {
+  font-weight: bold;
+}
+
+.select-custom,
+option {
+  font-weight: bolder;
+}
+
+.img-custom {
+  min-width: 50px;
+}
+
 @media screen and (max-width: 768px) {
   .container-footer {
     min-height: 3vh;
@@ -12088,41 +12131,4 @@ body {
   .table-text {
     font-size: 1em;
   }
-}
-footer {
-  height: 100%;
-}
-
-#squadName::-moz-placeholder {
-  color: #20c997;
-}
-
-#squadName::placeholder {
-  color: #20c997;
-}
-
-#searchPlayer::-moz-placeholder {
-  color: #f8f9fa;
-}
-
-#searchPlayer::placeholder {
-  color: #f8f9fa;
-}
-
-.btn-placeholder::-moz-placeholder {
-  color: #404040;
-  font-weight: bold;
-}
-
-.btn-placeholder::placeholder {
-  color: #404040;
-  font-weight: bold;
-}
-
-.btn-bold {
-  font-weight: bold;
-}
-
-.select-custom, option {
-  font-weight: bolder;
 }/*# sourceMappingURL=main.css.map */

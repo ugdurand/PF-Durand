@@ -1,0 +1,116 @@
+@import 'vars';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    height: 100%;
+}
+
+#squadName::placeholder {
+    color: $primary;
+}
+
+#searchPlayer::placeholder {
+    color: $light;
+}
+
+.btn-placeholder::placeholder {
+    color: $secondary;
+    font-weight: bold;
+}
+
+.btn-bold {
+    font-weight: bold;
+}
+
+.select-custom,
+option {
+    font-weight: bolder;
+
+}
+
+.img-custom {
+    min-width: 50px;
+}
+
+@mixin footer-base($height, $size, $paddingTop) {
+    min-height: $height;
+    font-size: $size;
+    padding-top: $paddingTop;
+}
+
+@mixin bg-base($heightHeader, $heightFooter) {
+    background-image: url(../imagenes/dark-fifa-bg-3.png);
+    min-height: calc(100vh - $heightHeader - $heightFooter );
+}
+
+// Media queries para ajustar las variables según el dispositivo
+@media screen and (max-width: 768px) {
+    // Dispositivos móviles
+    $heightHeader: 6vh;
+    $heightFooter: 3vh;
+
+    .container-footer {
+        @include footer-base($heightFooter, 0.6em, 5px);
+    }
+
+    .bg-main {
+        @include bg-base($heightHeader, $heightFooter);
+    }
+
+    .header {
+        height: $heightHeader;
+    }
+
+    .table-text {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    // Tablets
+    $heightHeader: 6vh;
+    $heightFooter: 3vh;
+
+    .container-footer {
+        @include footer-base($heightFooter, 0.75em, 5px);
+    }
+
+    .bg-main {
+        @include bg-base($heightHeader, $heightFooter);
+    }
+
+    .header {
+        height: $heightHeader;
+    }
+
+    .table-text {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    // Desktops
+    $heightHeader: 5vh;
+    $heightFooter: 5vh;
+
+    .container-footer {
+        @include footer-base($heightFooter, 1em, 15px);
+    }
+
+    .bg-main {
+        @include bg-base($heightHeader, $heightFooter);
+    }
+
+    .header {
+        height: $heightHeader;
+    }
+
+    .table-text {
+        font-size: 1em;
+    }
+}
